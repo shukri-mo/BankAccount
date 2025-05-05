@@ -104,7 +104,7 @@ function Account() {
 
           {/* Display Account Info */}
           <h3>Your Account Balance: {balance}</h3>
-          <h3>Current deposit: {accountDeposit}</h3>
+          <h3>Latest deposit: {accountDeposit}</h3>
           <h3>Purpose: {purpose}</h3>
           <h3>Loan: {loanAmount}</h3>
           <h3>Withdrawn: {currentWithdraw}</h3>
