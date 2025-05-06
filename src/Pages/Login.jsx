@@ -27,24 +27,39 @@ function Login() {
     navigate("/account");
   };
   return (
-    <div className="w-[30%] mx-auto p-4  rounded-2xl">
-      <h1 className="text-white text-2xl pb-2 pt-5">Create your Account credentials </h1>
-      <form action="" onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 py-2 pl-4 bg-slate-700 text-white"  >
-        <label htmlFor="">First Name</label>
-        <input type="text" {...register("fname")} className="w-50 bg-slate-50 outline-none" />
+    <>
+    <div className="min-h-screen bg-gray-900 flex items-center justify-center p-4">
+  <div className="w-full max-w-md p-6 bg-slate-700 text-white rounded-2xl">
+    <h1 className="text-2xl pb-4">Create your Account credentials</h1>
+    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-4">
+      <div>
+        <label>First Name</label>
+        <input {...register("fname")} className="w-full bg-slate-50 text-black p-2 rounded outline-none" />
         {errors.fname && <p className="text-red-400">{errors.fname.message}</p>}
-        <label htmlFor=""> Last Name</label>
-        <input type="text" {...register("lname")}  className="w-50 bg-slate-50 outline-none" />
+      </div>
+      <div>
+        <label>Last Name</label>
+        <input {...register("lname")} className="w-full bg-slate-50 text-black p-2 rounded outline-none" />
         {errors.lname && <p className="text-red-400">{errors.lname.message}</p>}
-        <label htmlFor=""> Email</label>
-        <input type="text" {...register("email")}  className= "w-50 bg-slate-50 outline-none" />
+      </div>
+      <div>
+        <label>Email</label>
+        <input {...register("email")} className="w-full bg-slate-50 text-black p-2 rounded outline-none" />
         {errors.email && <p className="text-red-400">{errors.email.message}</p>}
-        <label htmlFor=""> Passoword</label>
-        <input type="text" {...register("password")}  className=" w-50 bg-slate-50 outline-none" />
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="password" {...register("password")} className="w-full bg-slate-50 text-black p-2 rounded outline-none" />
         {errors.password && <p className="text-red-400">{errors.password.message}</p>}
-        <button type="submit" className="bg-slate-600 text-white w-36 mr-75 rounded hover:bg-blue-700 transition duration-300">Create</button>
-      </form>
-    </div>
+      </div>
+      <button type="submit" className="bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition duration-300 w-full">
+        Create
+      </button>
+    </form>
+  </div>
+</div>
+
+    </>
   );
 }
 
