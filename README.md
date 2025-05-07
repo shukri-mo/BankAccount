@@ -1,12 +1,19 @@
-# React + Vite
+# 💳 React Loan Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A loan management application built with **React**, **React Router**, **RTK (Redux Toolkit)**, **Zod**, **React Hook Form**, and styled using **Tailwind CSS**. Users can perform the following operations:
 
-Currently, two official plugins are available:
+- Get a loan
+- Withdraw funds
+- Deposit funds
+- Return the loan
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This app integrates **React Context** for state management and **React Router** for client-side navigation. **Zod** is used for form validation, and **Tailwind CSS** ensures a responsive and modern UI.
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🏠 **Account Management** – Create and manage a user account
+- 💰 **Loan Operations** – Get a loan, withdraw and deposit funds, return the loan
+- 📄 **Form Validation** – Zod used to validate the data entered through forms
+- 🔄 **State Management** – Redux Toolkit handles app state for loan data, user accounts, and transactions
+- 🔒 **React Hook Form** – Efficient form handling with validation and submission logic
+- 🖥️ **Responsive UI** – Fully styled with **Tailwind CSS** for a modern, mobile-first design
